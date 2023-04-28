@@ -34,5 +34,13 @@ button {
 
 .back {
   border: solid white 3px;
-  
+  width: 600px;
+  height: 300px;
+  margin-top: 120px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.timer {
+  letter-spacing: 10px;
 }
