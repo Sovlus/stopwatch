@@ -1,22 +1,23 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 function App() {
   const [time, setTime] = useState(0);
-  let intervalId;
+  const intervalRef = useRef();
 
   function startTimer() {
-    intervalId = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setTime(prevTime => prevTime +1);
     }, 1000);
   }
 
   function stopTimer() {
-    clearInterval(intervalId)
+    clearInterval(intervalRef.current);
   }
 
   function resetTimer() {
     setTime(0);
+    clearInterval(intervalRef.current);
   }
 
   return (
