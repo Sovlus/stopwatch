@@ -6,7 +6,7 @@ function App() {
   let intervalId;
 
   function startTimer() {
-    setInterval(() => {
+    intervalId = setInterval(() => {
       setTime(prevTime => prevTime +1);
     }, 1000);
   }
