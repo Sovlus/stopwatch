@@ -10,6 +10,10 @@ function App() {
     }, 1000);
   }
 
+  function stopTimer() {
+    clearInterval(intervalId)
+  }
+
   return (
     <div>
       {}
