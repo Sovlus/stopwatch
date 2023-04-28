@@ -14,6 +14,10 @@ function App() {
     clearInterval(intervalId)
   }
 
+  function resetTimer() {
+    setTime(0);
+  }
+  
   return (
     <div>
       {}
