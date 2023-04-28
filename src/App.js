@@ -21,11 +21,13 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>{time}</h1>
+    <div className='back'>
+      <h1 className='timer'>{time}</h1>
+      <div className='btns'>
       <button onClick={startTimer}>Start</button>
       <button onClick={stopTimer}>Stop</button>
       <button onClick={resetTimer}>Reset</button>
+      </div>
     </div>
   );
 }
