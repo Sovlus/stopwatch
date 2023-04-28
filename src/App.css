@@ -5,10 +5,11 @@
   box-sizing: border-box;
   border: 0;
   padding: 0;
+  user-select: none;
 }
 
 body {
-  background-color: rgb(247, 198, 92);
+  background-color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -43,4 +44,9 @@ button {
 
 .timer {
   letter-spacing: 10px;
+}
+
+button:hover {
+  border: solid #33ff0048 2px;
+  background-color: rgba(37, 37, 37, 0.596);
 }
