@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 function App() {
   const [time, setTime] = useState(0);
-  const [isRunning, setIsRunning] = useState(false);
   let intervalId;
 
   function startTimer() {
@@ -13,12 +12,10 @@ function App() {
   }
 
   function stopTimer() {
-    setIsRunning(false);
     clearInterval(intervalId)
   }
 
   function resetTimer() {
-    setIsRunning(false);
     setTime(0);
   }
 
