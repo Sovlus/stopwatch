@@ -28,7 +28,7 @@ function App() {
   return (
     <div className='back'>
       <h1 className='timer'>
-        {time.hours.toString().padStart(2, "0")}:
+        {time.hours.toString().padStart(1, "0")}:
         {time.minutes.toString().padStart(1, "0")}:
         {time.seconds.toString().padStart(1, "0")}
       </h1>
